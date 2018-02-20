@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Addproduct</servlet-name>
+        <servlet-class>com.news.Controller.Add</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>delete</servlet-name>
+        <servlet-class>com.news.Controller.delete</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>edit</servlet-name>
+        <servlet-class>com.news.Controller.edit</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>view</servlet-name>
+        <servlet-class>com.news.Controller.view</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Addproduct</servlet-name>
+        <url-pattern>/admin/add</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>delete</servlet-name>
+        <url-pattern>/admin/delete</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>edit</servlet-name>
+        <url-pattern>/admin/edit</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>index page</servlet-name>
+        <jsp-file>/index.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index page</servlet-name>
+        <url-pattern>/index.html</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>admin page</servlet-name>
+        <jsp-file>/admin/admin.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>admin page</servlet-name>
+        <url-pattern>/admin/admin</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>view</servlet-name>
+        <url-pattern>/view</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
+    </welcome-file-list>
+</web-app>
